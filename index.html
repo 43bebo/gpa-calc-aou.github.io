@@ -442,13 +442,6 @@
     </div>
 
     <div class="info-section">
-      <div class="info-title"><span class="emoji">ℹ️</span> <span data-i18n="aboutTitle">About</span></div>
-      <div class="info-box">
-        <span data-i18n="aboutText">This tool helps AOU students calculate Semester GPA and forecast Cumulative GPA accurately according to the latest university grading scales.</span>
-      </div>
-    </div>
-
-    <div class="info-section">
       <div class="info-title"><span class="emoji">🎓</span> <span data-i18n="scaleTitle">Grading Scale</span></div>
       <table class="info-table">
         <thead>
@@ -491,18 +484,26 @@
     </div>
 
     <div class="info-section">
-      <div class="info-title"><span class="emoji">📌</span> <span data-i18n="officialTitle">Official Rules (Summary)</span></div>
       <details>
-        <summary data-i18n="warningQ">Academic Warning (Bachelor)</summary>
-        <div class="faq-content" data-i18n="warningA">• Warning applies after completing 12 credit hours or more.<br>• If CGPA &lt; 2.00 → warning at the end of any semester (except summer).<br>• Dismissal may occur if warnings reach 5 in 5 consecutive semesters.</div>
-      </details>
-      <details>
-        <summary data-i18n="graduationQ">Graduation Requirement (Bachelor)</summary>
-        <div class="faq-content" data-i18n="graduationA">• Bachelor degree is awarded after passing all courses in the study plan<br>• AND CGPA must be not less than 2.00 out of 4.00.</div>
-      </details>
-      <details>
-        <summary data-i18n="failQ">Failing Status Codes</summary>
-        <div class="faq-content" data-i18n="failA">• FC: Fail in Continuous Assessment (CA) below 30% of CA grade.<br>• FA: Fail due to absenteeism with no excuse.<br>• FF: Fail in Final Exam below 40% of Final grade.<br>• F: Total (CA + Final) below 50%.<br>Note: Fail marks are counted within semester and cumulative GPA.</div>
+        <summary style="font-size: 17px;"><span style="display:flex; align-items:center; gap:10px;"><span class="emoji" style="font-size: 20px;">📌</span> <span data-i18n="officialTitle">Official Rules (Summary)</span></span></summary>
+        
+        <div class="faq-content" style="padding-top: 10px;">
+          <div style="margin-bottom: 24px;">
+            <strong style="color: var(--secondary); font-size: 15px; display: block; margin-bottom: 6px;" data-i18n="warningQ">Academic Warning (Bachelor)</strong>
+            <div data-i18n="warningA" style="line-height: 1.8;">• Warning applies after completing 12 credit hours or more.<br>• If CGPA &lt; 2.00 → warning at the end of any semester (except summer).<br>• Dismissal may occur if warnings reach 5 in 5 consecutive semesters.</div>
+          </div>
+          
+          <div style="margin-bottom: 24px;">
+            <strong style="color: var(--secondary); font-size: 15px; display: block; margin-bottom: 6px;" data-i18n="graduationQ">Graduation Requirement (Bachelor)</strong>
+            <div data-i18n="graduationA" style="line-height: 1.8;">• Bachelor degree is awarded after passing all courses in the study plan<br>• AND CGPA must be not less than 2.00 out of 4.00.</div>
+          </div>
+          
+          <div>
+            <strong style="color: var(--secondary); font-size: 15px; display: block; margin-bottom: 6px;" data-i18n="failQ">Failing Status Codes</strong>
+            <div data-i18n="failA" style="line-height: 1.8;">• FC: Fail in Continuous Assessment (CA) below 30% of CA grade.<br>• FA: Fail due to absenteeism with no excuse.<br>• FF: Fail in Final Exam below 40% of Final grade.<br>• F: Total (CA + Final) below 50%.<br><span style="opacity: 0.8; font-size: 13px;">Note: Fail marks are counted within semester and cumulative GPA.</span></div>
+          </div>
+        </div>
+
       </details>
     </div>
   </div>
@@ -512,6 +513,7 @@
       © <span id="yr">2026</span> AOU Calculator | Unofficial Student Initiative | <span>v3.0 LiquidGlass</span>
     </div>
     <div style="margin-bottom:6px;">
+      This tool helps AOU students calculate Semester GPA and forecast Cumulative GPA accurately according to the latest university grading scales.
       Designed & Developed by: <strong>DarkVoid @eu3p on discord</strong>
     </div>
   </div>
@@ -547,7 +549,7 @@ const TEXT = {
     graduationQ:"Graduation Requirement (Bachelor)",
     graduationA:"• Bachelor degree is awarded after passing all courses in the study plan<br>• AND CGPA must be not less than 2.00 out of 4.00.",
     failQ:"Failing Status Codes",
-    failA:"• FC: Fail in Continuous Assessment (CA) below 30% of CA grade.<br>• FA: Fail due to absenteeism with no excuse.<br>• FF: Fail in Final Exam below 40% of Final grade.<br>• F: Total (CA + Final) below 50%.<br>Note: Fail marks are counted within semester and cumulative GPA."
+    failA:"• FC: Fail in Continuous Assessment (CA) below 30% of CA grade.<br>• FA: Fail due to absenteeism with no excuse.<br>• FF: Fail in Final Exam below 40% of Final grade.<br>• F: Total (CA + Final) below 50%.<br><span style='opacity: 0.8; font-size: 13px;'>Note: Fail marks are counted within semester and cumulative GPA.</span>"
   },
   ar: {
     currBtn:"فصلي", expBtn:"تراكمي",
@@ -573,7 +575,7 @@ const TEXT = {
     graduationQ:"شرط التخرج (بكالوريوس)",
     graduationA:"• يُمنح البكالوريوس بعد النجاح في جميع مقررات الخطة<br>• وبشرط ألا يقل CGPA عن 2.00 من 4.00.",
     failQ:"رموز الرسوب",
-    failA:"• FC: رسوب في أعمال السنة (CA) أقل من 30% من درجة CA.<br>• FA: رسوب بسبب الغياب بدون عذر.<br>• FF: رسوب في النهائي أقل من 40% من درجة النهائي.<br>• F: مجموع (CA + النهائي) أقل من 50%.<br>ملاحظة: الرسوب يُحتسب في الفصلي والتراكمي."
+    failA:"• FC: رسوب في أعمال السنة (CA) أقل من 30% من درجة CA.<br>• FA: رسوب بسبب الغياب بدون عذر.<br>• FF: رسوب في النهائي أقل من 40% من درجة النهائي.<br>• F: مجموع (CA + النهائي) أقل من 50%.<br><span style='opacity: 0.8; font-size: 13px;'>ملاحظة: الرسوب يُحتسب في الفصلي والتراكمي.</span>"
   }
 };
 
