@@ -1,1 +1,1 @@
-# gpa-calc-aou.github.io
+# GPA Calcultor for AOU universty
